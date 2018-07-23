@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>a_key_bako's page</title>
-  </head>
-  <body>
-    <header>
-      <h1>a_key_bako's page</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Contents</h2>
-      </section> 
-    </main>
-    <hr>
-    <footer>
-      <small>Copyright&copy; a_key_bako's page All Rights Reserved.</small>
-    </footer>
-  </body>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.3.11/p5.min.js"></script>
+        <script>
+            function setup() {
+                createCanvas(640, 480);
+            }
+            
+            function draw() {
+                if (mouseIsPressed) {
+                    fill(0);
+                } else {
+                    fill(255);
+                }
+                ellipse(mouseX, mouseY, 80, 80);
+            }
+        </script>
+    </body>
 </html>
